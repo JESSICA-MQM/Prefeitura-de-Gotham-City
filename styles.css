@@ -1,0 +1,178 @@
+/* Reset básico para remover margens e padding */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Estilo geral do body */
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+
+/* Cabeçalho */
+
+header.topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+}
+
+header.topo .logo img {
+    width: 80px;
+}
+
+header.topo .titulo h1 {
+    font-size: 24px;
+}
+
+header.topo .titulo p {
+    font-size: 14px;
+}
+
+
+/* Menu de navegação */
+
+nav.menu {
+    background-color: #ffd700;
+    padding: 10px;
+}
+
+nav.menu ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav.menu li {
+    margin: 0 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/* Seção de Bem-vindo */
+
+section.bem-vindo {
+    position: relative;
+    text-align: center;
+}
+
+section.bem-vindo .imagem-fundo {
+    width: 100%;
+    height: auto;
+    opacity: 0.7;
+}
+
+section.bem-vindo .texto-imagem {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 24px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+
+/* Seção de Serviços */
+
+section.servicos {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.grid-servicos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    text-align: center;
+}
+
+.grid-servicos div {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.grid-servicos img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.grid-servicos p {
+    font-weight: bold;
+    color: #333;
+}
+
+
+/* Previsão do tempo */
+
+section.servicos .tempo {
+    background-color: #fbecec;
+    color: rgb(11, 9, 9);
+    padding: 20px;
+    border-left: #ffd700;
+}
+
+section.servicos .tempo h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+section.servicos .tempo p {
+    font-size: 16px;
+}
+
+
+/* Projetos em andamento */
+
+section.projetos {
+    padding: 20px;
+}
+
+section.projetos h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.grid-projetos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.grid-projetos div {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    font-weight: bold;
+}
+
+
+/* Rodapé */
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+}
